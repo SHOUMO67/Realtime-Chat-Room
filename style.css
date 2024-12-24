@@ -1,0 +1,275 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    background-image: url(./images/wap2.jpg);
+    background-color: rgba(11, 11, 11, 0.956);
+    overflow: hidden;
+}
+
+.mainBox {
+    width: 80vw;
+    height: 90vh;
+    background-color: rgba(24, 24, 24, 0.855);
+    /* background-image: url(./images/wap.jpg); */
+    border-radius: 10px;
+    display: flex;
+}
+
+.rightChatBox {
+    border-radius: 5px;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.855);
+    background-image: url(./images/wap.jpg);
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+
+}
+
+.header {
+    border-radius: 5px;
+    height: 5%;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    color: rgba(9, 248, 89, 0.89);
+    background-color: rgba(24, 24, 24, 0.889);
+
+    padding: 7px 9px;
+}
+
+/* .greenCircle {
+    margin: 0px 10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(13, 249, 13, 0.873);
+    border-radius: 50%;
+} */
+
+.chatBox {
+    margin-top: 1vh;
+    height: 85%;
+    overflow-x: auto;
+    padding-left: 10px;
+    /* border: 1px solid #ccc; */
+    background-color: rgba(24, 24, 24, 0.855);
+    background-image: url(./images/wap.jpg);
+    
+}
+
+.messageContainer {
+    padding: 10px;
+    max-width: 50%;
+    font-size: 1.1rem;
+}
+
+.message {
+    background-color: rgba(24, 24, 24, 0.855);
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.messageBox {
+    border-radius: 15px;
+    width: 97%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(24, 24, 24, 0.855);
+    padding-left: 10px;
+    margin-left: 6px;
+    margin-bottom: 4px;
+
+}
+input{
+  background-color: rgba(42, 42, 42, 0.462);
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.853);
+
+}
+.spanUserNmae{
+    margin-right: 100px;
+
+
+    /* margin-left: 200px; */
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+   
+    margin-left: 15px;
+    margin-bottom: 10px;
+    font-size: .7rem;
+}
+
+input {
+    width: 87%;
+    height: 40%;
+    font-size: 1rem;
+    padding-left: 10px;
+
+}
+
+button {
+    border-radius: 20px;
+    width: 10%;
+    background-color: rgb(10, 224, 114);
+
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 60%;
+    border: none;
+    color: white;
+}
+/* .messageBox {
+    margin-bottom: 10px;
+} */
+
+.leftUserCountBox {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8vh;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+.userButtonBox {
+    margin: 4px 0px;
+    width: 50%;
+    height: 90%;
+    font-size: 1rem;
+    background-color: rgba(121, 12, 246, 0.832);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 17px;
+    margin-left: 60px;
+}
+
+.userCountBox {
+    margin: 5px 0px;
+    /* width: 60%; */
+    width: 15vw;
+    height: 10%;
+    font-size: 1rem;
+    border: 2px solid rgba(208, 255, 0, 0.937);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(248, 246, 246, 0.978);
+    border-radius: 15px;
+}
+.sentMessage {
+    background-color: rgba(24, 24, 24, 0.855);
+    align-self: flex-end;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.receivedMessage {
+    margin-top: 10px;
+    background-color: rgba(66, 66, 66, 0.611);
+    align-self: flex-start;
+    border-radius: 10px;
+    color: aliceblue;
+}
+.userAvatar {
+    width: 30px; /* Set the width of the circular image */
+    height: 30px; /* Set the height of the circular image */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px; /* Add some margin between the image and username */
+  }
+  .messageColumn{
+    display: flex;
+    /* align-items: ce; */
+  }
+/* Media Queries for responsiveness */
+
+@media only screen and (max-width: 1200px) {
+    .mainBox {
+        flex-direction: column;
+        align-items: center; /* Align content in the center */
+        width: 90vw;
+        height: 100vh;
+        /* height: 60vh; */
+    }
+
+    .rightChatBox {
+        width: 90%; /* Adjust as needed */
+        max-width: 400px; /* Limit maximum width */
+        margin-top: 1rem;
+        height: 75vh;
+    }
+
+    .chatBox {
+        max-width: 120%;
+    }
+
+    .messageContainer {
+        max-width: 90%;
+    }
+
+    .messageBox {
+        flex-direction: column;
+        align-items: center; /* Align content in the center */
+        height: auto;
+        padding-top: 1rem;
+        margin-left: -0.0px;
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 70%;
+        margin: .5rem;
+    }
+
+    button {
+        border-radius: 20px;
+        width: 30%;
+        margin: 10px;
+        padding: .4rem;
+        background-color: rgb(12, 227, 41);
+    }
+
+    .leftUserCountBox {
+        margin-top: 1rem;
+        align-items: center; /* Align content in the center */
+        width: 90%; /* Adjust as needed */
+        max-width: 400px; /* Limit maximum width */
+        height: 67px; /* Set a fixed height */
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    .userButtonBox {
+        /* width: 100%;  */
+        width: 150px;
+        height: 4vh;
+        margin-left: -1px;
+        /* background-color: red; */
+    }
+    .userCountBox{
+        width: 200px;
+        height: 5vh; 
+        margin-top: -20px;
+    }
+}
